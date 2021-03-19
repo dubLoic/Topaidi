@@ -11,6 +11,7 @@ import javax.persistence.ManyToOne;
 @IdClass(NoteId.class)
 public class Note {
 
+	
 	private Double top;
 	private Double flop;
 	

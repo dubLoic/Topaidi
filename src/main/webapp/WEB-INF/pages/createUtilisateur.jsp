@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Nouveau Client !</title>
+<title>Nouveau Utilisateur !</title>
     <%@include file="commons/header.jsp" %>
 
 </head>
@@ -13,10 +13,9 @@
 <%@include file="commons/menu.jsp" %>
 <h1>Formulaire de creation</h1>
 
-<form action="clients" method="post">
-  <label for="nomClient">Nom</label> <input type="text" name="nomClient">
-  <label for="adresseClient">Adresse</label> <input type="text" name="adresseClient">
-  <input type="hidden" value="formCreate" name="actionPost"/>
+<form action="utilisateur" method="post">
+  <label for="email">Email</label> <input type="text" name="email">
+  <label for="pwd">Password</label> <input type="password" name="pwd">
   
   <input type="submit" value="Valider"/>
 </form>

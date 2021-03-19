@@ -13,7 +13,7 @@
 <div class="container">
  <%@include file="commons/menu.jsp" %>
  
- 
+ <p>Welcome to our social media app</p>
   
 </div>
 

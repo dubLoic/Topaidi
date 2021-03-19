@@ -28,7 +28,6 @@ public class UtilisateurServlet  extends HttpServlet{
 		HttpSession session = req.getSession();
 		session.setAttribute("UserID", p.getId());
 		
-		//resp.sendRedirect(req.getContextPath() + "/idee?action=list");
-		this.getServletContext().getRequestDispatcher("/WEB-INF/pages/ListIdee.jsp").forward(req, resp);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/pages/listIdee.jsp").forward(req, resp);
 	}
 }
