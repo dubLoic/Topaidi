@@ -17,7 +17,7 @@ public class CommentaireId implements Serializable{
 		return utilisateur;
 	}
 
-	public void setUtilisateurId(long utilisateurId) {
+	public void setUtilisateurId(Long utilisateurId) {
 		this.utilisateur = utilisateurId;
 	}
 
@@ -25,7 +25,7 @@ public class CommentaireId implements Serializable{
 		return idee;
 	}
 
-	public void setIdeeId(long ideeId) {
+	public void setIdeeId(Long ideeId) {
 		this.idee = ideeId;
 	}
 	

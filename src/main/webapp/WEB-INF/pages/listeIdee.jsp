@@ -21,7 +21,7 @@
 	     <td><c:out value="${p.categorie}"></c:out></td>
 	     <td><c:out value="${p.description}"></c:out></td>
 	     <td><c:out value="${p.image}"></c:out></td>
-	     <td><c:out value="${p.dateposte}"></c:out></td>
+	     <td><c:out value="${p.datePoste}"></c:out></td>
     </tr>
  </c:forEach>
  </table>

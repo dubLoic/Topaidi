@@ -30,10 +30,10 @@ public class IdeeServlet extends HttpServlet{
 		if(session.getAttribute("userID") != null) {
 			if(req.getParameter("action").equals("create"))
 				this.getServletContext().getRequestDispatcher("/WEB-INF/pages/createIdee.jsp").forward(req, resp);
-			else {
+			else if (req.getParameter("action").equals("list")){
 				List<Idee> ideeList = service.getIdeeList();
 				req.setAttribute("ideeList", ideeList);
-				this.getServletContext().getRequestDispatcher("/WEB-INF/pages/listIdee.jsp").forward(req, resp);
+				this.getServletContext().getRequestDispatcher("/WEB-INF/pages/listeIdee.jsp").forward(req, resp);
 			}
 		} else {
 			this.getServletContext().getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(req, resp);
@@ -52,10 +52,11 @@ public class IdeeServlet extends HttpServlet{
 		user.setId((Long)session.getAttribute("userID"));
 		p.setTitre(req.getParameter("titre"));
 		p.setDescription(req.getParameter("description"));
-		p.setDatePoste(new Date());
+		p.setDatePoste(req.getParameter("datep"));
 		p.setCategorie(req.getParameter("categorie"));
 		p.setImage(req.getParameter("image"));
 		service.createIdee(p);
 		resp.sendRedirect(req.getContextPath() + "/idee?action=list");
+		//this.getServletContext().getRequestDispatcher("/WEB-INF/pages/listeIdee.jsp").forward(req, resp);
 	}
 }

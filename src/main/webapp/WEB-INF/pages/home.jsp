@@ -13,8 +13,10 @@
 <div class="container">
  <%@include file="commons/menu.jsp" %>
  
- <p>Welcome to our social media app</p>
+ <h1>Bienvenue sur notre boite à idée</h1>
   
+  <h2>Créer une idée</h2>
+  <p> Pour cela il faut créer un compte ce qui vous connectera et vous donnera accès à page de création d'idée. </p>
 </div>
 
 </body>

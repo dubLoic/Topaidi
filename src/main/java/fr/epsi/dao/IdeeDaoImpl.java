@@ -88,7 +88,7 @@ public class IdeeDaoImpl implements IdeeDao{
 	public List<Idee> getIdeeList() {
 		try {
 			utx.begin();
-			List<Idee> idee = em.createQuery("SELECT i FROM Idee", Idee.class).getResultList();
+			List<Idee> idee = em.createQuery("SELECT i FROM Idee i", Idee.class).getResultList();
 			utx.commit();
 			return idee;
 		} catch (NotSupportedException e) {

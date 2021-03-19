@@ -88,7 +88,7 @@ public class UtilisateurDaoImpl implements UtilisateurDao{
 	public List<Utilisateur> getUtilisateurList() {
 		try {
 			utx.begin();
-			List<Utilisateur> Utilisateur = em.createQuery("SELECT i FROM Utilisateur", Utilisateur.class).getResultList();
+			List<Utilisateur> Utilisateur = em.createQuery("SELECT u FROM Utilisateur u", Utilisateur.class).getResultList();
 			utx.commit();
 			return Utilisateur;
 		} catch (NotSupportedException e) {

@@ -10,11 +10,8 @@ import javax.ejb.Stateless;
 import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
 
-import fr.epsi.dao.IdeeDao;
-import fr.epsi.dao.IdeeDaoImpl;
 import fr.epsi.dao.UtilisateurDao;
 import fr.epsi.dao.UtilisateurDaoImpl;
-import fr.epsi.entite.Idee;
 import fr.epsi.entite.Utilisateur;
 
 @Stateless

@@ -22,7 +22,7 @@ public class Idee {
 	private String categorie;
 	private String description;
 	private String image;
-	private Date datePoste;
+	private String datePoste;
 	
 	@ManyToOne
 	private Utilisateur utilisateur;
@@ -65,11 +65,11 @@ public class Idee {
 		this.image = image;
 	}
 
-	public Date getDatePoste() {
+	public String getDatePoste() {
 		return datePoste;
 	}
 
-	public void setDatePoste(Date datePoste) {
+	public void setDatePoste(String datePoste) {
 		this.datePoste = datePoste;
 	}
 
